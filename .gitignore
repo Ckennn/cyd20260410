@@ -1,0 +1,29 @@
+# Python virtualenv
+.venv/
+
+# Runtime data / cache — 运行时产物，不入仓
+data/
+cache_files/
+
+# Strategy output — 每日交易指令临时文件
+stocks_tobe_traded/
+
+# Logs
+logs/
+*.log
+export_debug.log
+
+# Python compiled
+__pycache__/
+*.pyc
+*.pyo
+
+# Archives / binaries
+*.7z
+*.zip
+*.xlsx
+*.db
+
+# IDE / OS
+.DS_Store
+Thumbs.db

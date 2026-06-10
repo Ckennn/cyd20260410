@@ -1,0 +1,26 @@
+DEBUG: daily_days=23, industry_days=23, min_industry_days=23, db_industry_count=5, expected_count=86
+DEBUG: Aggregation triggered!
+DEBUG: df_agg size: 1978
+DEBUG: daily_days=61, industry_days=61, min_industry_days=61, db_industry_count=5, expected_count=86
+DEBUG: Aggregation triggered!
+DEBUG: df_agg size: 5246
+DEBUG: daily_days=2211, industry_days=2211, min_industry_days=22, db_industry_count=86, expected_count=86
+DEBUG: Aggregation triggered!
+DEBUG: df_agg size: 190146
+DEBUG: daily_days=22, industry_days=22, min_industry_days=22, db_industry_count=86, expected_count=86
+DEBUG: daily_days=22, industry_days=22, min_industry_days=22, db_industry_count=86, expected_count=86
+DEBUG: daily_days=242, industry_days=242, min_industry_days=138, db_industry_count=86, expected_count=86
+DEBUG: Aggregation triggered!
+DEBUG: df_agg size: 20812
+DEBUG: daily_days=22, industry_days=22, min_industry_days=22, db_industry_count=86, expected_count=86
+DEBUG: daily_days=22, industry_days=22, min_industry_days=22, db_industry_count=86, expected_count=86
+DEBUG: daily_days=38, industry_days=38, min_industry_days=38, db_industry_count=86, expected_count=86
+DEBUG: daily_days=22, industry_days=22, min_industry_days=22, db_industry_count=86, expected_count=86
+DEBUG: daily_days=22, industry_days=22, min_industry_days=22, db_industry_count=86, expected_count=86
+DEBUG: daily_days=59, industry_days=59, min_industry_days=58, db_industry_count=86, expected_count=86
+DEBUG: daily_days=22, industry_days=22, min_industry_days=22, db_industry_count=86, expected_count=86
+DEBUG: daily_days=22, industry_days=22, min_industry_days=22, db_industry_count=86, expected_count=86
+DEBUG: daily_days=22, industry_days=22, min_industry_days=22, db_industry_count=86, expected_count=86
+DEBUG: daily_days=220, industry_days=220, min_industry_days=116, db_industry_count=86, expected_count=86
+DEBUG: Aggregation triggered!
+DEBUG: df_agg size: 18920

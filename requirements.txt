@@ -1,0 +1,26 @@
+# Core runtime
+akshare
+backtrader
+colorlog
+joblib
+matplotlib
+numpy
+openpyxl
+pandas
+pytz
+requests
+scipy
+scikit-learn
+seaborn
+sqlalchemy
+TA-Lib
+tqdm
+xgboost
+
+# Experimental / optional scripts
+beepy
+lightgbm
+pyodbc
+pymssql
+ray
+tensorflow
