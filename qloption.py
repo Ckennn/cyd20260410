@@ -348,7 +348,7 @@ class database:
                     return df
             except Exception:
                 pass
-        
+
         # 回退到统计版动态阈值
         dynamic_file_path = os.path.join(qldef.file_cache_path, 'industry_parameters_dynamic.csv')
         if os.path.exists(dynamic_file_path):
@@ -359,3 +359,28 @@ class database:
             except Exception:
                 return None
         return None
+
+    # 根据 market 和 target 从缓存加载指定标的的日度行情数据
+    @staticmethod
+    def load_indicator_by_target(market: str, target: str, division: str = "1d"):
+        # 兼容处理: 部分代码使用 "sh000300" 格式，实际文件命名为 "zh_000300_1d_ind.csv"
+        # 去除 target 中的 "sh" 或 "sz" 前缀
+        clean_target = target
+        if target.startswith("sh"):
+            clean_target = target[2:]
+        elif target.startswith("sz"):
+            clean_target = target[2:]
+
+        file_path = os.path.join(
+            qldef.market_quotation_directory,
+            f"{market}_{clean_target}_{division}_ind.csv"
+        )
+        if not os.path.exists(file_path):
+            # 退回原始 target 名称
+            file_path = os.path.join(
+                qldef.market_quotation_directory,
+                f"{market}_{target}_{division}_ind.csv"
+            )
+        if not os.path.exists(file_path):
+            return pd.DataFrame()
+        return database.read_single_big_csv(file_path)

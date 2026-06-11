@@ -28,7 +28,11 @@ if not os.path.exists(font_name):
     if platform.system() == 'Windows':
         font_name = 'SimHei'  # 黑体
     else:
-        font_name = 'SimHei'  # 其他系统尝试黑体
+        # Linux/WSL: 尝试使用系统已有的中文字体
+        if os.path.exists('/usr/share/fonts/truetype/wqy/wqy-microhei.ttc'):
+            font_name = '/usr/share/fonts/truetype/wqy/wqy-microhei.ttc'
+        else:
+            font_name = 'SimHei'  # 其他系统尝试黑体
 
 if FontProperties:
     if os.path.exists(font_name):

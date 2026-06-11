@@ -1,52 +1,29 @@
-# Python cache
-__pycache__/
-*.py[cod]
-*$py.class
-
-# Virtual environments
+# Python virtualenv
 .venv/
-venv/
-env/
 
-# Build / test / tooling caches
-.pytest_cache/
-.mypy_cache/
-.ruff_cache/
-.coverage
-.coverage.*
-htmlcov/
-
-# Jupyter / notebooks
-.ipynb_checkpoints/
-
-# Runtime logs and debug outputs
-logs/
-*.log
-debug_log.txt
-export_debug.log
-run_output.log
-run_step4.log
-test_output.txt
-test_output_2.txt
-
-# Generated market/cache artifacts
+# Runtime data / cache — 运行时产物，不入仓
+data/
 cache_files/
+
+# Strategy output — 每日交易指令临时文件
 stocks_tobe_traded/
 
-# Local databases and mutable data snapshots
-data/*.db
-*.db
-*.db-journal
-*.db-wal
-*.db-shm
-*.sqlite
-*.sqlite3
+# Logs
+logs/
+*.log
+export_debug.log
 
-# Archives / binary drops
-*.zip
+# Python compiled
+__pycache__/
+*.pyc
+*.pyo
+
+# Archives / binaries
 *.7z
-*.rar
+*.zip
+*.xlsx
+*.db
 
-# OS/editor files
+# IDE / OS
 .DS_Store
 Thumbs.db
